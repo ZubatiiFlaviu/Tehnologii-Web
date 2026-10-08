@@ -1,0 +1,45 @@
+body.register-page { --accent: #68a9ef; min-height: 100vh; align-items: flex-start; padding: 40px 20px; background: radial-gradient(ellipse at top, #304657 0, #26313b 60%); color: #f5f8fb; }
+.register-card { width: min(760px, 100%); padding: clamp(24px, 5vw, 52px); border: 1px solid rgb(255 255 255 / 10%); border-radius: 18px; background: #202a33; box-shadow: 0 24px 70px rgb(0 0 0 / 28%); }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-size: 12px; font-weight: 800; letter-spacing: .12em; }
+.brand img { width: 42px; height: 42px; object-fit: contain; }
+.register-intro { margin: 30px 0 26px; }
+.eyebrow { margin: 0 0 8px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.register-intro h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 38px); letter-spacing: -.04em; }
+.register-intro > p:last-child { margin: 0; color: #b8c4ce; line-height: 1.6; }
+.field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 14px; }
+.field { min-width: 0; margin-bottom: 18px; }
+.field-wide { grid-column: 1 / -1; }
+.field > label, .choice-group legend { display: block; margin-bottom: 7px; color: #eaf0f5; font-size: 13px; font-weight: 700; }
+.field label span, .choice-group legend span { color: #9eacb8; font-weight: 400; }
+.field input, .field select, .field textarea { display: block; width: 100%; min-height: 46px; padding: 11px 13px; border: 1px solid #46535f; border-radius: 8px; background: #182129; color: #f5f8fb; font: inherit; font-size: 14px; }
+.field textarea { min-height: 90px; resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: #81909d; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); outline: 3px solid rgb(104 169 239 / 20%); }
+.field input[type="file"] { padding: 8px; color: #c6d0d9; }
+.field input[type="file"]::file-selector-button { margin-right: 12px; padding: 7px 10px; border: 0; border-radius: 5px; background: #354655; color: #fff; cursor: pointer; }
+.choice-group { min-width: 0; margin: 0 0 20px; padding: 0; border: 0; }
+.choice-group legend { margin-bottom: 10px; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 9px; }
+.choice-row label, .terms-choice { display: inline-flex; align-items: center; gap: 8px; color: #cbd5de; font-size: 13px; }
+.choice-row label { padding: 9px 11px; border: 1px solid #3a4752; border-radius: 7px; background: #1a242d; }
+.choice-row input, .terms-choice input { accent-color: #4d91d7; }
+.terms-choice { margin: 2px 0 20px; line-height: 1.5; }
+.form-actions { display: flex; gap: 12px; }
+.button { min-height: 46px; padding: 0 18px; border: 1px solid transparent; border-radius: 7px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.button-primary { flex: 1; background: #3471b8; color: #fff; }
+.button-primary span { margin-left: 6px; }
+.button-primary:hover, .button-primary:focus-visible { background: #4387ce; }
+.button-secondary { border-color: #46535f; background: transparent; color: #d5dee6; }
+.button-secondary:hover, .button-secondary:focus-visible { background: #2c3944; }
+.sign-in { margin: 24px 0 0; color: #b8c4ce; text-align: center; font-size: 14px; }
+.sign-in a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.sign-in a:hover, .sign-in a:focus-visible { color: #a9d2ff; text-decoration: underline; }
+@media (max-width: 560px) {
+    body.register-page { padding: 16px 12px; }
+    .register-card { padding: 23px 18px; border-radius: 13px; }
+    .field-grid { grid-template-columns: 1fr; }
+    .field-wide { grid-column: auto; }
+    .choice-row { gap: 7px; }
+    .choice-row label { padding: 8px 9px; }
+    .form-actions { flex-direction: column; }
+}

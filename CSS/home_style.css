@@ -1,0 +1,55 @@
+body.home-page { --accent: #68a9ef; --ink: #202a33; --muted: #64717d; min-height: 100vh; display: flex; flex-direction: column; align-items: stretch; background: #f4f7fa; color: var(--ink); }
+.site-header { width: 100%; background: #202a33; color: #fff; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; width: min(1120px, calc(100% - 48px)); min-height: 76px; margin: 0 auto; gap: 24px; }
+.home-brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .11em; text-decoration: none; white-space: nowrap; }
+.home-brand img { width: 38px; height: 38px; object-fit: contain; }
+.site-header nav { display: flex; align-items: center; gap: 26px; }
+.site-header nav a { color: #d1d9e0; font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s, background .2s; }
+.site-header nav a:hover, .site-header nav a:focus-visible, .site-header nav a.active { color: #fff; }
+.site-header nav .nav-join { padding: 11px 15px; border-radius: 6px; background: #3471b8; color: #fff; }
+.site-header nav .nav-join:hover, .site-header nav .nav-join:focus-visible { background: #4387ce; }
+.home-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; flex: 1; }
+.hero { position: relative; overflow: hidden; min-height: 390px; margin-top: 34px; padding: clamp(36px, 7vw, 76px); border-radius: 16px; background: linear-gradient(115deg, #1e2d39, #263d50 70%, #315474); color: #fff; isolation: isolate; }
+.hero > :not(.hero-orbit):not(.hero-dot) { position: relative; z-index: 1; }
+.eyebrow { margin: 0 0 12px; color: #4587cb; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+.hero .eyebrow { color: #91c7fb; }
+.hero h1 { max-width: 640px; margin: 0; font-size: clamp(38px, 6vw, 66px); line-height: 1.04; letter-spacing: -.055em; }
+.hero h1 span { color: #91c7fb; }
+.hero > p:not(.eyebrow) { max-width: 540px; margin: 18px 0 24px; color: #c0ccd6; font-size: 16px; line-height: 1.7; }
+.hero-cta { display: inline-flex; align-items: center; gap: 14px; padding: 13px 18px; border-radius: 7px; background: #3471b8; color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; }
+.hero-cta:hover, .hero-cta:focus-visible { background: #4387ce; }
+.hero-orbit { position: absolute; z-index: -1; border: 1px solid rgb(159 200 235 / 15%); border-radius: 50%; }
+.orbit-one { width: 380px; height: 380px; top: 28px; right: 28px; }
+.orbit-two { width: 260px; height: 260px; top: 88px; right: 88px; }
+.hero-dot { position: absolute; border-radius: 50%; background: #91c7fb; box-shadow: 0 0 35px rgb(145 199 251 / 70%); }
+.dot-one { width: 15px; height: 15px; top: 115px; right: 137px; }
+.dot-two { width: 9px; height: 9px; top: 318px; right: 335px; background: #ac9dff; }
+.welcome-section { padding: 68px 0 52px; }
+.section-heading { margin-bottom: 26px; }
+.section-heading h2 { max-width: 520px; margin: 0; font-size: clamp(25px, 4vw, 34px); letter-spacing: -.035em; line-height: 1.2; }
+.columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.column { min-width: 0; padding: 24px; border: 1px solid #e2e8ed; border-radius: 12px; background: #fff; box-shadow: 0 8px 24px rgb(26 41 53 / 5%); }
+.card-icon { display: grid; width: 42px; height: 42px; place-items: center; margin-bottom: 22px; border-radius: 10px; font-size: 18px; font-weight: 800; }
+.icon-blue { background: #e9f3ff; color: #3471b8; }.icon-violet { background: #f0edff; color: #7461c7; }.icon-green { background: #e8f7ef; color: #2f9660; }
+.card-kicker { margin: 0 0 8px; color: #7c8994; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
+.column h3 { margin: 0 0 9px; font-size: 19px; letter-spacing: -.02em; }
+.column p:not(.card-kicker) { min-height: 72px; margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.column > a { color: #2768a9; font-size: 13px; font-weight: 700; text-decoration: none; }
+.column > a:hover, .column > a:focus-visible { text-decoration: underline; }.column > a span { padding-left: 5px; }
+.join-banner { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 0 0 48px; padding: 26px 30px; border-radius: 12px; background: #e8f1f9; }
+.join-banner .eyebrow { margin-bottom: 8px; }.join-banner h2 { max-width: 580px; margin: 0; font-size: clamp(20px, 3vw, 27px); letter-spacing: -.035em; }
+.join-banner > a { display: inline-flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 7px; background: #202a33; color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.join-banner > a:hover, .join-banner > a:focus-visible { background: #3471b8; }
+.site-footer { border-top: 1px solid #e0e6eb; background: #fff; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: min(1120px, calc(100% - 48px)); min-height: 68px; margin: 0 auto; color: #7b8791; font-size: 12px; }
+.footer-inner p { margin: 0; }.footer-inner a { color: #596975; text-decoration: none; }.footer-inner a:hover, .footer-inner a:focus-visible { color: #2768a9; text-decoration: underline; }
+@media (max-width: 900px) { .hero { min-height: 350px; }.orbit-one { right: -110px; }.orbit-two { right: -50px; }.columns { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 680px) {
+    .header-inner { width: min(calc(100% - 32px), 520px); flex-direction: column; align-items: stretch; gap: 4px; padding: 14px 0; }
+    .site-header nav { flex-wrap: wrap; justify-content: flex-start; gap: 9px 18px; }.site-header nav .nav-join { margin-left: auto; padding: 8px 11px; }
+    .home-main { width: min(calc(100% - 32px), 520px); }.hero { min-height: 0; margin-top: 18px; padding: 34px 24px; }.hero > p:not(.eyebrow) { font-size: 14px; }
+    .orbit-one { top: 60px; right: -260px; }.orbit-two { top: 120px; right: -200px; }.dot-one { right: 32px; }.dot-two { right: 72px; }
+    .welcome-section { padding: 46px 0 34px; }.columns { grid-template-columns: 1fr; gap: 12px; }.column p:not(.card-kicker) { min-height: 0; }
+    .join-banner { align-items: flex-start; flex-direction: column; margin-bottom: 30px; padding: 22px; }
+    .footer-inner { width: min(calc(100% - 32px), 520px); align-items: flex-start; flex-direction: column; justify-content: center; padding: 15px 0; }
+}

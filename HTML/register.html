@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your account in the Web Technology community.">
+    <title>Create an account | Web Technology Community</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+<body class="register-page">
+    <main class="register-card">
+        <a class="brand" href="home.html" aria-label="Web Technology Community home"><img src="../MEDIA/logo.png" alt=""><span>WEB COMMUNITY</span></a>
+        <header class="register-intro"><p class="eyebrow">JOIN THE COMMUNITY</p><h1>Create your account</h1><p>Meet curious people, share what you’re building, and learn together.</p></header>
+        <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+            <div class="field-grid">
+                <div class="field"><label for="full-name">Full name</label><input id="full-name" name="full_name" type="text" placeholder="Alex Morgan" autocomplete="name" required></div>
+                <div class="field"><label for="username">Username</label><input id="username" name="username" type="text" placeholder="alexbuilds" autocomplete="username" minlength="3" required></div>
+                <div class="field field-wide"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+                <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required></div>
+                <div class="field"><label for="confirm-password">Confirm password</label><input id="confirm-password" name="confirm_password" type="password" placeholder="Enter it again" autocomplete="new-password" minlength="8" required></div>
+                <div class="field"><label for="birth-date">Date of birth</label><input id="birth-date" name="birth_date" type="date"></div>
+                <div class="field"><label for="country">Country</label><select id="country" name="country" required><option value="" disabled selected>Select your country</option><option value="ro">Romania</option><option value="gb">United Kingdom</option><option value="us">United States</option><option value="de">Germany</option><option value="other">Other</option></select></div>
+            </div>
+            <fieldset class="choice-group"><legend>Gender <span>(optional)</span></legend><div class="choice-row"><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="female"> Female</label></div></fieldset>
+            <fieldset class="choice-group"><legend>What are you interested in?</legend><div class="choice-row"><label><input type="checkbox" name="interests[]" value="frontend"> Front-end</label><label><input type="checkbox" name="interests[]" value="backend"> Back-end</label><label><input type="checkbox" name="interests[]" value="design"> UI / UX</label><label><input type="checkbox" name="interests[]" value="ai"> AI</label></div></fieldset>
+            <div class="field"><label for="bio">A little about you <span>(optional)</span></label><textarea id="bio" name="bio" rows="3" maxlength="300" placeholder="What are you learning or building?"></textarea></div>
+            <div class="field"><label for="profile-picture">Profile picture <span>(optional)</span></label><input id="profile-picture" name="profile_picture" type="file" accept="image/png,image/jpeg,image/webp"></div>
+            <label class="terms-choice"><input type="checkbox" name="terms" required> I agree to the community terms and privacy policy.</label>
+            <div class="form-actions"><button class="button button-primary" type="submit">Create account <span aria-hidden="true">→</span></button><button class="button button-secondary" type="reset">Clear form</button></div>
+        </form>
+        <p class="sign-in">Already a member? <a href="login.html">Sign in</a></p>
+    </main>
+</body>
+</html>
