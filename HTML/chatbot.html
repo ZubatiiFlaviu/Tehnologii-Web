@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discută cu chatbotul comunității despre proiectul tău web.">
+    <title>Chatbot | Web Technology Community</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/chatbot_style.css">
+</head>
+<body class="chatbot-page">
+    <main class="chatbot-card">
+        <header class="chatbot-header">
+            <a href="home.html" class="back-link">← Înapoi la comunitate</a>
+            <div class="bot-identity"><span class="bot-avatar" aria-hidden="true">W</span><div><p class="eyebrow">WEB COMMUNITY</p><h1>Asistentul proiectului</h1><p class="bot-status"><span aria-hidden="true"></span> Online · gata să te ajute</p></div></div>
+        </header>
+        <div class="chat-container" id="chat-container" role="log" aria-live="polite" aria-relevant="additions"></div>
+        <form id="chat-form" class="chat-form" autocomplete="off">
+            <label class="visually-hidden" for="user-input">Răspunsul tău</label>
+            <input type="text" id="user-input" name="answer" placeholder="Alege a, b sau c…" maxlength="300" required>
+            <button type="submit">Trimite <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="chat-help">Scrie litera variantei sau răspunsul complet.</p>
+    </main>
+    <script src="../JS/chatbot_js.js"></script>
+</body>
+</html>

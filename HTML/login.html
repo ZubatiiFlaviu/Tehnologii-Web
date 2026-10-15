@@ -15,14 +15,18 @@
 
         <div class="separator" aria-hidden="true"></div>
 
-        <form class="login-form" action="#" method="get">
+        <form class="login-form" id="loginForm" action="#" method="get" novalidate>
             <h1>Login</h1>
 
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+            <input id="email" name="email" type="email" placeholder="nume.prenume@e-uvt.ro" autocomplete="username" aria-describedby="email-hint" required>
+            <small class="login-hint" id="email-hint">Folosește formatul nume.prenume@e-uvt.ro; poți adăuga până la două cifre la final.</small>
 
             <label for="password">Parola</label>
-            <input id="password" name="password" type="password" placeholder="Parola" autocomplete="current-password" required>
+            <input id="password" name="password" type="password" placeholder="Parola" autocomplete="current-password" aria-describedby="password-hint" required>
+            <small class="login-hint" id="password-hint">Minimum 7 caractere: literă mare, literă mică, cifră și caracter special.</small>
+
+            <p class="login-message" id="loginMessage" role="status" aria-live="polite"></p>
 
             <button type="submit">Login</button>
 
@@ -31,5 +35,6 @@
             </p>
         </form>
     </main>
+    <script src="../JS/login_js.js"></script>
 </body>
 </html>

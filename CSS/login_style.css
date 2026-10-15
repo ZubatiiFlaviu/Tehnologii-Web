@@ -80,6 +80,32 @@ body {
     transform: scale(1.01);
 }
 
+.login-hint {
+    margin: -10px 0 14px;
+    color: #aebbc6;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.login-message {
+    min-height: 18px;
+    margin: -2px 0 12px;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.login-message:empty {
+    display: none;
+}
+
+.login-message.is-error {
+    color: #ff9b9b;
+}
+
+.login-message.is-success {
+    color: #91e1b4;
+}
+
 .login-form button {
     padding: 14px;
     border: 0;
