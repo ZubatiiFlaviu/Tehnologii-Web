@@ -1,3 +1,3 @@
 # Tehnologii Web
 
-Laboratoare pentru cursul de Tehnologii Web. Continutul laboratorului 2 este pe branch-ul `lab2`.
+Fiecare laborator va fi păstrat pe branch-ul său, numit `labX`, unde `X` este numele laboratorului (de exemplu, `lab2`).
