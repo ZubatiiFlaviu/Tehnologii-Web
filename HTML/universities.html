@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caută universități din România și exportă rezultatele în CSV.">
+    <title>Universități din România | Web Technology Community</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/universities_style.css">
+</head>
+<body class="universities-page">
+    <header class="universities-header">
+        <a class="brand" href="home.html"><img src="../MEDIA/logo.png" alt=""><span>WEB COMMUNITY</span></a>
+        <nav aria-label="Navigare principală">
+            <a href="home.html">Acasă</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="universities.html" aria-current="page">Universități</a>
+            <a href="login.html">Autentificare</a>
+        </nav>
+    </header>
+    <main class="universities-main">
+        <section class="universities-card" aria-labelledby="page-title">
+            <p class="eyebrow">RESURSE PENTRU COMUNITATE</p>
+            <h1 id="page-title">Universități din România</h1>
+            <p class="intro">Explorează instituțiile de învățământ superior și accesează site-urile lor oficiale.</p>
+            <div class="toolbar">
+                <div class="filter-field">
+                    <label for="q">Filtru după nume <span>(opțional)</span></label>
+                    <input id="q" type="search" placeholder="Caută o universitate…" autocomplete="off">
+                </div>
+                <button id="export-csv" type="button">Exportă CSV <span aria-hidden="true">↓</span></button>
+            </div>
+            <p id="status" class="status" role="status" aria-live="polite">Se pregătește lista…</p>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th scope="col">Nume</th><th scope="col">Țara</th><th scope="col">Site</th></tr></thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="../JS/universities_js.js"></script>
+</body>
+</html>
+
